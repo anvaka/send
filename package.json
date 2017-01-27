@@ -6,7 +6,7 @@
   "scripts": {
     "start": "browserify index.js > dist/bundle.js",
     "watch": "watchify --debug index.js -o dist/bundle.js -v",
-    "server": "http-server -c-1 -S -C ./cert/cert.pem -K ./cert/key.pem",
+    "server": "http-server -c-1",
     "dev": "concurrently --kill-others \"npm run watch\" \"npm run server\""
   },
   "keywords": [

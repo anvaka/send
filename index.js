@@ -47,5 +47,4 @@ function setFocus(appState) {
   if (appState.email) return; // no need to change focus if email is here
 
   emailInput.focus();
-
 }
