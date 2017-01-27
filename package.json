@@ -4,7 +4,10 @@
   "description": "Send ideas to future self",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "browserify index.js > dist/bundle.js",
+    "watch": "watchify --debug index.js -o dist/bundle.js -v",
+    "server": "http-server -c-1 -S -C ./cert/cert.pem -K ./cert/key.pem",
+    "dev": "concurrently --kill-others \"npm run watch\" \"npm run server\""
   },
   "keywords": [
     "send",
@@ -18,5 +21,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/anvaka/send"
+  },
+  "dependencies": {
+    "query-state": "^3.0.3"
   }
 }

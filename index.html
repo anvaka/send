@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge' >
+  <meta charset="utf-8">
+
+  <title>Send Idea</title>
+  <style>
+    html, body {
+      height: 100%;
+      position: absolute;
+      width: 100%;
+      overflow: hidden;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      font-family: sans-serif;
+      padding: 0;
+      margin: 0;
+      background-color: #f6f9ff;
+    }
+    a#send-link {
+      line-height: 32px;
+      background: #EA4335;
+      color: white;
+      padding: 10px 30px;
+      height: 32px;
+      font-size: 24px;
+      text-decoration: none;
+    }
+    a#send-link.disabled {
+      pointer-events: none;
+      cursor: default;
+      opacity: 0.2;
+    }
+    #email-input {
+      margin-top: 10px;
+      font-size: 18px;
+      padding: 7px 0;
+      border: 1px solid transparent;;
+      background: transparent;
+      text-align: center;
+      width: 100%;
+    }
+    #email-input:focus {
+      outline: none;
+      border: 1px solid gray;
+    }
+  </style>
+</head>
+<body>
+  <a href='#' id='send-link'>Send to Future Self</a>
+  <input type='email' id='email-input' placeholder='Enter email address here' tabindex=1>
+  <script src='dist/bundle.js'></script>
+</body>
+</html>
