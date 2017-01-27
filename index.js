@@ -1,5 +1,6 @@
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('service-worker.js');
+  console.log('installing oflfine worker');
 }
 
 var queryState = require('query-state');
