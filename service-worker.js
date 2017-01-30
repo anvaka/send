@@ -5,7 +5,8 @@ var version = 'v1::';
 
 var offlineResources = [
   '',
-  'dist/bundle.js'
+  'dist/bundle.js',
+  'dist/style.css'
 ];
 
 self.addEventListener("install", function(event) {
@@ -14,9 +15,6 @@ self.addEventListener("install", function(event) {
       .open(version + 'anvaka-send')
       .then(function(cache) {
         return cache.addAll(offlineResources);
-      })
-      .then(function() {
-        console.log('WORKER: install completed');
       })
   );
 });
