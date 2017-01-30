@@ -7,6 +7,9 @@
 
   <title>Send Idea</title>
   <style>
+* {
+  box-sizing: border-box;
+}
     html, body {
       height: 100%;
       position: absolute;
@@ -23,38 +26,78 @@
       margin: 0;
       background-color: #f6f9ff;
     }
-    a#send-link {
-      line-height: 32px;
-      background: #EA4335;
-      color: white;
-      padding: 10px 30px;
-      height: 32px;
-      font-size: 24px;
-      text-decoration: none;
+    #link-output {
+      line-height: 21px;
     }
-    a#send-link.disabled {
-      pointer-events: none;
-      cursor: default;
-      opacity: 0.2;
-    }
-    #email-input {
-      margin-top: 10px;
-      font-size: 18px;
-      padding: 7px 0;
-      border: 1px solid transparent;;
-      background: transparent;
+    .send-form {
+      padding: 10px;
       text-align: center;
+      width: 600px;
+    }
+    .send-form #label-output {
       width: 100%;
     }
-    #email-input:focus {
-      outline: none;
-      border: 1px solid gray;
+
+    .mui-form {
+      width: 600px;
     }
+    .hidden {
+      display: none;
+    }
+
+    .step-2 {
+      opacity: 0.1
+    }
+
+    .step-2.valid {
+      opacity: 1.0;
+    }
+  @media (max-width: 670px) {
+    .send-form {
+      width: 100%;
+    }
+    .mui-form {
+      width: 100%;
+      padding: 0 20px;
+    }
+
+    body {
+      align-items: initial;
+    }
+  }
+  .create-new {
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    width: 100%;
+  }
   </style>
+<link href="dist/style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-  <a href='#' id='send-link'>Send to Future Self</a>
-  <input type='email' id='email-input' placeholder='Enter email address here' tabindex=1>
+  <div class='design-form'>
+    <form class=' mui-form'>
+      <legend>Step 1: Design Email Button</legend>
+      <div class='mui-textfield'>
+        <input id='label-input' type="text" placeholder="Button name. E.g. 'Save Idea'" tabindex='1'>
+      </div>
+      <div class='mui-textfield'>
+        <input id='email-input' type="email" placeholder="Enter your email here" tabindex='2'>
+      </div>
+    </form>
+    <form class='mui-form step-2'>
+      <legend>Step 2: Bookmark this link</legend>
+      <a href='#' id='link-output'>#</a>
+    </form>
+  </div>
+  <div class='send-form hidden'>
+    <a href='#' id='label-output' class='mui-btn mui-btn--raised mui-btn--accent'></a>
+    <span id='send-to' class='mui--text-dark-secondary'></span>
+    <div class='create-new'>
+      <a href='#'>Create a new bookmark</a>
+    </div>
+  </div>
+
   <script src='dist/bundle.js'></script>
 </body>
 </html>
