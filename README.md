@@ -1,6 +1,6 @@
 # send
 
-Send ideas to future self
+Send ideas to future self 
 
 # license
 
