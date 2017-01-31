@@ -29,6 +29,12 @@ so even GitHub will not know your email from bookmarked URL.
 
 ## How to make a GMail filter
 
+1. Open an email, and select "Filter messages like this"
+2. Follow throught the screen to create filter, and click on "Create filter with this search"
+3. Select label that you want to apply
+
+![Create Filter](https://raw.githubusercontent.com/anvaka/send/master/media/create-filter.gif)
+
 # license
 
 MIT
