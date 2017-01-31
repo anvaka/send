@@ -11,11 +11,11 @@ help of a filter I mark them as read, and add `Idea` label.
 
 ## How to bookmark an email on your phone
 
+![email bookmark on home screen](https://raw.githubusercontent.com/anvaka/send/master/media/save-idea-bookmark.png)
+
 It depends on your phone. iPhone, unfortunately, does not let you to "pin" email to
 the home screen. So I made [a website](https://anvaka.github.io/send/), that has just
-one `mailto:` button.  When clicked - it opens your email client.
-
-![email bookmark on home screen](https://raw.githubusercontent.com/anvaka/send/master/media/save-idea-bookmark.png)
+one button.  When clicked - it opens your email client.
 
 You can design the name of the button and email address. The website will give you a link
 that can be added to home screen.
