@@ -15,17 +15,17 @@ It depends on your phone. iPhone, unfortunately, does not let you to "pin" email
 the home screen. So I made [a website](https://anvaka.github.io/send/), that has just
 one `mailto:` button.  When clicked - it opens your email client.
 
-![demo](https://raw.githubusercontent.com/anvaka/send/master/media/save-idea-bookmark.png)
+![email bookmark on home screen](https://raw.githubusercontent.com/anvaka/send/master/media/save-idea-bookmark.png)
 
 You can design the name of the button and email address. The website will give you a link
 that can be added to home screen.
 
+![design email bookmark](https://raw.githubusercontent.com/anvaka/send/master/media/design-idea-bookmark.gif)
 
 *Note:* The website does not track you and never sends your email anywhere. In fact,
 it uses a hash tag to store your email address. Hash tags are not sent to the server,
 so even GitHub will not know your email from bookmarked URL.
 
-![design email bookmark](https://raw.githubusercontent.com/anvaka/send/master/media/design-idea-bookmark.gif)
 
 ## How to make a GMail filter
 
