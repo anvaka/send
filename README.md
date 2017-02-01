@@ -1,7 +1,7 @@
 # How to use email to organize your ideas
 
 Every time when I have an idea for a new project - I send an email to myself, so I don't
-forget it. This repository describes my way of managing ideas.
+forget it. This repository describes a quick life hack that I recently learned.
 
 GMail will deliver mail addressed to "user+*tag*@gmail.com" as though it
 was addressed to `user@gmail.com`. I send ideas to `anvaka+idea@gmail.com`. With
