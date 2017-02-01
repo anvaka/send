@@ -3,29 +3,30 @@
 Every time when I have an idea for a new project - I send an email to myself, so I don't
 forget it. This repository describes a quick life hack that I recently learned.
 
-GMail will deliver mail addressed to "user+*tag*@gmail.com" as though it
-was addressed to `user@gmail.com`. I send ideas to `anvaka+idea@gmail.com`. With
-help of a filter I mark them as read, and add `Idea` label.
+GMail will deliver mail addressed to "yourself+*tag*@gmail.com" as though it was
+addressed to "yourself@gmail.com". Every time when you have a new idea, you can
+just email it to yourself+idea@gmail.com. 
+
+If you also set up GMail filters, you can mark these emails as "read" and apply labels to them:
 
 ![demo](https://raw.githubusercontent.com/anvaka/send/master/media/send-idea.gif)
 
-## How to bookmark an email on your phone
+## How to bookmark an email on your phone?
 
-![email bookmark on home screen](https://raw.githubusercontent.com/anvaka/send/master/media/save-idea-bookmark.png)
-
-It depends on your phone. iPhone, unfortunately, does not let you to "pin" email to
+It depends on your phone. iPhone, unfortunately, does not let you to "pin" a single email to
 the home screen. So I made [a website](https://anvaka.github.io/send/), that has just
 one button.  When clicked - it opens your email client.
 
+![email bookmark on home screen](https://raw.githubusercontent.com/anvaka/send/master/media/save-idea-bookmark.png)
+
 You can design the name of the button and email address. The website gives you a link
-that can be added to home screen.
+that can be added to home screen
 
 ![design email bookmark](https://raw.githubusercontent.com/anvaka/send/master/media/design-idea-bookmark.gif)
 
 *Note:* The website does not track you and never sends your email anywhere. In fact,
 it uses a hash tag to store your email address. Hash tags are not sent to the server,
 so even GitHub will not know your email from bookmarked URL.
-
 
 ## How to make a GMail filter
 
